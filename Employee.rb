@@ -1,14 +1,13 @@
 require_relative "EmployeeModule"
 class Employee 
 	include EmployeeModule
-	@id
 	@f_name 
 	@l_name 
 	@age
 	@salary 
 	@address
 	@position
-	attr_accessor :id, :f_name , :l_name , :age , :salary , :address ,:position
+	attr_accessor :f_name , :l_name , :age , :salary , :address ,:position
 	def initialize 
 
 	end
