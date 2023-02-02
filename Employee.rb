@@ -1,12 +1,13 @@
+
 require_relative "EmployeeModule"
 class Employee 
-	include EmployeeModule
 	@f_name 
 	@l_name 
 	@age
 	@salary 
 	@address
 	@position
+	include EmployeeModule
 	attr_accessor :f_name , :l_name , :age , :salary , :address ,:position
 	def initialize 
 
@@ -18,6 +19,15 @@ class Employee
 	end
 
 	def benefit
+
+	end
+	def to_s
+		puts f_name
+		puts l_name
+		puts age
+		puts salary
+		puts address
+		puts position
 
 	end
 end
